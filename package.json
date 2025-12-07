@@ -1,6 +1,6 @@
 {
 
-  "homepage": "https://rakshita-12.github.io/learn_git/portfolio",
+  "homepage": "https://github.com/rakshita-12/project1.git",
 
   "name": "portfolio",
 
@@ -17,8 +17,6 @@
     "@testing-library/react": "^16.3.0",
 
     "@testing-library/user-event": "^13.5.0",
-
-    "gh-pages": "^6.3.0",
 
     "react": "^19.2.1",
 
@@ -79,6 +77,12 @@
       "last 1 safari version"
 
     ]
+
+  },
+
+  "devDependencies": {
+
+    "gh-pages": "^6.3.0"
 
   }
 
