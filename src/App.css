@@ -1,0 +1,100 @@
+/* ===================== Global Styles ===================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* ===================== Sections ===================== */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Home Section */
+.home {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  padding: 80px 20px;
+}
+
+/* About Section */
+.about {
+  background: linear-gradient(to right, #f7971e, #ffd200);
+  color: #111;
+  padding: 80px 20px;
+}
+
+/* Skills Section */
+.skills {
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  color: white;
+  padding: 80px 20px;
+}
+
+/* Projects Section */
+.projects {
+  background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  color: #111;
+  padding: 80px 20px;
+}
+
+/* Contact Section */
+.contact {
+  background: linear-gradient(to right, #f857a6, #ff5858);
+  color: white;
+  padding: 80px 20px;
+}
+
+/* ===================== Project Cards ===================== */
+.project-card {
+  margin: 20px auto;
+  width: 300px;
+  max-width: 90%;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  color: #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ===================== Responsive Adjustments ===================== */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 15px;
+  }
+
+  .home, .about, .skills, .projects, .contact {
+    padding: 60px 15px;
+  }
+
+  .project-card {
+    width: 90%;
+    margin: 15px auto;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 30px 10px;
+  }
+
+  .home, .about, .skills, .projects, .contact {
+    padding: 50px 10px;
+  }
+
+  .project-card {
+    padding: 10px;
+  }
+} 

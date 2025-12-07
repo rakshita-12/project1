@@ -1,0 +1,84 @@
+/* Navbar.css */
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #111; /* Darker background */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* subtle shadow */
+  transition: all 0.3s ease;
+}
+
+/* Navbar logo */
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #ff9800; /* highlight logo */
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Nav links */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav link styles */
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect with underline animation */
+.navbar ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff9800;
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ff9800;
+}
+
+.navbar ul li a:hover::after {
+  width: 100%;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    width: 100%;
+    padding: 8px 0;
+  }
+}
